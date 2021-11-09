@@ -56,6 +56,19 @@ namespace Rest_API_with_ASP.NET_Core_Part_1.Controllers
             caso seja ele transforma os dados passados em um objeto da classe manipulavel,
             caso não seja ele retorna o erro (o retorno do erro é devido ao decorator na classe do controler [apiControler])
              */
+
+            /*Validações*/
+
+            if(produto.Preco <= 0) {
+                Response.StatusCode = 400;
+                return new JsonResult(new {menssage="O preço do produto não pode ser menor que zero."});
+            }
+
+            if(produto.Nome.Length <= 1){
+                Response.StatusCode = 400;
+                return new JsonResult(new {menssage="Nome do produto precisa ter mais de um caractere."});
+            }
+
             try
             {
                 this._database.Add(produto); // Salvando o registro (Objeto recebido no parametro (corpo da requisição)) no Banco de Dados
