@@ -96,5 +96,30 @@ namespace Rest_API_with_ASP.NET_Core_Part_1.Controllers
                 return new ObjectResult("");
             }
         }
+
+        [HttpPatch]
+        public IActionResult Patch([FromBody] Produto produto) {
+            if(produto.Id.ToString() == "") {
+                Response.StatusCode = 400;
+                return new JsonResult(new {menssage="O Id do produto é inválido."});
+            } else {
+                try
+                {
+                    var produtoResult = this._database.Produtos.First(prod => prod.Id == produto.Id);
+                    //Condicao ? Faz algo (Verdadeiro) : Faz outra coisa (False)
+                    produtoResult.Nome = produto.Nome != null ? produto.Nome : produtoResult.Nome; //produtoResult.Nome recebe  a informação com base na condição. Se produto.Nome != null - Então produtoResult.Nome = produto.Nome, caso seja igual a null produtoResult.Nome = produtoResult.Nome;
+                    produtoResult.Preco = produto.Preco != 0 ? produto.Preco : produtoResult.Preco;
+
+                    this._database.SaveChanges();
+                    Response.StatusCode = 200;
+                    return new JsonResult(new {menssage="Produto alterado com sucesso."});
+                }
+                catch (System.Exception)
+                {
+                    Response.StatusCode = 400;
+                    return new JsonResult(new {menssage="Produto não encontrado."});;
+                }
+            }
+        }
     }
 }
