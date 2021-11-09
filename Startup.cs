@@ -29,7 +29,7 @@ namespace Rest_API_with_ASP.NET_Core_Part_1
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Rest_API_with_ASP.NET_Core_Part_1", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Rest API with ASP.NET Core Part 2", Version = "v1" });
             });
         }
 
@@ -45,7 +45,12 @@ namespace Rest_API_with_ASP.NET_Core_Part_1
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Rest_API_with_ASP.NET_Core_Part_1 v1"));
+                app.UseSwaggerUI(c =>  {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Rest API with ASP.NET Core Part 2 - Version: v1");
+                    c.RoutePrefix = string.Empty;
+
+                });
+                
             }
 
             app.UseHttpsRedirection();
