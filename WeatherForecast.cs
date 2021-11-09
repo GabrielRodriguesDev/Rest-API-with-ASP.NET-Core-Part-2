@@ -1,6 +1,6 @@
 using System;
 
-namespace Rest_API_with_ASP.NET_Core_Part_1
+namespace Rest_API_with_ASP.NET_Core_Part_2
 {
     public class WeatherForecast
     {

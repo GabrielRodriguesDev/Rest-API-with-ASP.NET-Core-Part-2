@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Rest_API_with_ASP.NET_Core_Part_1.Migrations
+namespace Rest_API_with_ASP.NET_Core_Part_2.Migrations
 {
     public partial class modifyEntity : Migration
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Rest_API_with_ASP.NET_Core_Part_1.Models
+namespace Rest_API_with_ASP.NET_Core_Part_2.Models
 {
     public class Produto
 

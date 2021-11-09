@@ -4,11 +4,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using Rest_API_with_ASP.NET_Core_Part_1.Data;
+using Rest_API_with_ASP.NET_Core_Part_2.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
 
-namespace Rest_API_with_ASP.NET_Core_Part_1
+namespace Rest_API_with_ASP.NET_Core_Part_2
 {
     public class Startup
     {

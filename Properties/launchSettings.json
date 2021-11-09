@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Rest_API_with_ASP.NET_Core_Part_1": {
+    "Rest_API_with_ASP.NET_Core_Part_2": {
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

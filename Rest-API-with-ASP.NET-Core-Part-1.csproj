@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>Rest_API_with_ASP.NET_Core_Part_1</RootNamespace>
+    <RootNamespace>Rest_API_with_ASP.NET_Core_Part_2</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

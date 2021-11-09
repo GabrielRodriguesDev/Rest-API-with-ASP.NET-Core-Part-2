@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Rest_API_with_ASP.NET_Core_Part_1.Data;
-using Rest_API_with_ASP.NET_Core_Part_1.Models;
+using Rest_API_with_ASP.NET_Core_Part_2.Data;
+using Rest_API_with_ASP.NET_Core_Part_2.Models;
 
-namespace Rest_API_with_ASP.NET_Core_Part_1.Controllers
+namespace Rest_API_with_ASP.NET_Core_Part_2.Controllers
 {
     [ApiController]
     [Route("[controller]")]

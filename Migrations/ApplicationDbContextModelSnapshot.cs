@@ -3,9 +3,9 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Rest_API_with_ASP.NET_Core_Part_1.Data;
+using Rest_API_with_ASP.NET_Core_Part_2.Data;
 
-namespace Rest_API_with_ASP.NET_Core_Part_1.Migrations
+namespace Rest_API_with_ASP.NET_Core_Part_2.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
@@ -17,7 +17,7 @@ namespace Rest_API_with_ASP.NET_Core_Part_1.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 64)
                 .HasAnnotation("ProductVersion", "5.0.11");
 
-            modelBuilder.Entity("Rest_API_with_ASP.NET_Core_Part_1.Models.Produto", b =>
+            modelBuilder.Entity("Rest_API_with_ASP.NET_Core_Part_2.Models.Produto", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
